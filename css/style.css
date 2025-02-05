@@ -1,0 +1,140 @@
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'LaffRiotNF';
+    src: url(../font/LaffRiotNF\ Cyr.otf);
+}
+
+@font-face {
+    font-family: 'Hombre';
+    src: url(../font/Hombre\ Regular.otf);
+}
+
+/*общий контейнер*/
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+/* шапка */
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* логотип */
+.logo{
+    background: url("../img/shapka.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+    aspect-ratio: 2/1;
+    box-shadow: inset 2px 2px 5px rgb(154, 147, 140, 0.5), 1px 1px 5px rgb(255, 255, 255, 1);
+    /* flex-grow: 0 ; */
+}
+
+/* меню */
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5em + 1vw);
+    color: #dcdcdc;
+    flex-grow: 1;
+}
+
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: calc(1.5rem + 1vw);
+    font-family: 'Hombre';
+}
+
+.nav-item:hover{
+    text-shadow: 5px 5px 10px darkblue, 1px 1px 1px;
+}
+
+.bg-line{
+    background: url("../img/up.jpg") no-repeat transparent;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 7/1;
+    margin: 25px 0;
+}
+
+.head{
+    text-align: center;
+    font-size: calc(1.5rem + 5vw);
+    letter-spacing: 2rem;
+    color: #4a69c0;
+    font-family: 'LaffRiotNF';
+    text-shadow: 2px 2px 1px #000;
+}
+
+.line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+
+.img1{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+
+.text1{
+    color: white;
+    font-size: calc(0.5rem + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+}
+
+.img2{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+
+.img2 img, .img1 img{
+    width: 100%;
+    height: auto;
+}
+
+.text2{
+    color: white;
+    font-size: calc(0.5rem + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+}
+
+.footer{
+    color: #fff0f5;
+    display: flex;
+    width: 100%;
+    background-color: #333333;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav-item{
+    font-size: calc(0.2rem + 1vw);
+}
