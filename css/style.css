@@ -1,6 +1,15 @@
 body{
     min-height: 100vh;
-    background-color: black;
+    /* background-color: black; */
+}
+
+a, u {
+  text-decoration: none;
+}
+
+h2{
+    align-self: center;
+    font-size: calc(1.5rem + 1vw);
 }
 
 @font-face {
@@ -11,6 +20,11 @@ body{
 @font-face {
     font-family: 'Hombre';
     src: url(../font/Hombre\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url(../font/HelveticaNeue-Medium.otf);
 }
 
 /*общий контейнер*/
@@ -41,7 +55,7 @@ header{
 /* меню */
 .nav{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     font-size: calc(0.5em + 1vw);
     color: #dcdcdc;
@@ -55,6 +69,7 @@ header{
     margin-left: 50px;
     font-size: calc(1.5rem + 1vw);
     font-family: 'Hombre';
+    color: #4a69c0
 }
 
 .nav-item:hover{
@@ -62,12 +77,12 @@ header{
 }
 
 .bg-line{
-    background: url("../img/up.jpg") no-repeat transparent;
+    /* background: url("../img/") no-repeat transparent; */
     background-size: cover;
     width: 100%;
     height: auto;
-    aspect-ratio: 7/1;
-    margin: 25px 0;
+    /* aspect-ratio: 7/1; */
+    /* margin: 0px 0; */
 }
 
 .head{
@@ -77,6 +92,7 @@ header{
     color: #4a69c0;
     font-family: 'LaffRiotNF';
     text-shadow: 2px 2px 1px #000;
+    margin:0px;
 }
 
 .line{
@@ -91,10 +107,12 @@ header{
 }
 
 .text1{
-    color: white;
+    /* color: white; */
     font-size: calc(0.5rem + 1vw);
     margin: 0px 10px 10px 20px;
     flex: 1 1 50%;
+    font-family: 'HelveticaNeue-Medium';
+
 }
 
 .img2{
@@ -108,10 +126,11 @@ header{
 }
 
 .text2{
-    color: white;
+    /* color: white; */
     font-size: calc(0.5rem + 1vw);
     margin: 0px 10px 10px 20px;
     flex: 1 1 50%;
+    font-family: 'HelveticaNeue-Medium';
 }
 
 .footer{
@@ -137,4 +156,57 @@ header{
 
 .footer-nav-item{
     font-size: calc(0.2rem + 1vw);
+}
+
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #4CAF50;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #45a049;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-info, .order-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    /* border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    margin-right: 15px;
+    color: #4CAF50;
+    font-size: 1.2em;
+}
+
+i{
+    font-style: normal;
 }
